@@ -19,5 +19,6 @@ $trigger-error: #E94B4B;
 
 /* Gradientes */
 $dark-gradient: linear-gradient(to bottom, $rich-black-fogra, $rich-black-fogra-2);
+$dark-gradient-reverse: linear-gradient(to bottom, $rich-black-fogra-2, $rich-black-fogra);
 $dark-gradient-2: linear-gradient(to bottom, $rich-black-fogra-2, $black-coral);
 $dark-gradient-2-reverse: linear-gradient(to bottom, $black-coral, $rich-black-fogra-2);
