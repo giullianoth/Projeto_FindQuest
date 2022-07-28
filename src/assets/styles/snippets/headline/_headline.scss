@@ -1,0 +1,51 @@
+.main_headline {
+    background-size: contain;
+    background-position: right center;
+
+    .main_headline_content {
+        justify-content: flex-start;
+        height: 100%;
+
+        header {
+            text-align: right;
+
+            h1 {
+                font-size: 3em;
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                &>span {
+                    font-size: 1.2em;
+                    font-weight: 900;
+                    display: block;
+                    text-transform: uppercase;
+
+                    /* Adaptável a resolução de 480px */
+                    @media(max-width: 30em) {
+                        font-size: 1em;
+                    }
+                }
+
+                /* Adaptável a resolução de 1024px */
+                @media(max-width: 64em) {
+                    font-size: 2.6em;
+                }
+
+                /* Adaptável a resolução de 480px */
+                @media(max-width: 30em) {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            /* Adaptável a resolução de 900px */
+            @media(max-width: 56em) {
+                flex-basis: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

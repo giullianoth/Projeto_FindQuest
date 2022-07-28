@@ -1,0 +1,23 @@
+/* Paleta de cores */
+/* Primárias */
+$rich-black-fogra: #0C0E14;
+$rich-black-fogra-2: #141722;
+$black-coral: hsl(213, 23%, 33%);
+$opal: #94BDBC;
+$celeste: #CCFFF7;
+
+/* Secundárias */
+$celeste-hover: rgba(204, 255, 247, 0.8);
+$rich-black-fogra-2-modal: rgba(20, 23, 34, 0.8);
+
+/* Cores de avisos (Triggers) */
+$trigger: $opal;
+$trigger-success: #45B645;
+$trigger-info: #4481D1;
+$trigger-warning: #CCB031;
+$trigger-error: #E94B4B;
+
+/* Gradientes */
+$dark-gradient: linear-gradient(to bottom, $rich-black-fogra, $rich-black-fogra-2);
+$dark-gradient-2: linear-gradient(to bottom, $rich-black-fogra-2, $black-coral);
+$dark-gradient-2-reverse: linear-gradient(to bottom, $black-coral, $rich-black-fogra-2);

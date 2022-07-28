@@ -1,0 +1,13 @@
+/* Variáveis SCSS */
+@import "variables";
+
+/* Configurações globais */
+@import "../fonts/fonts";
+@import "boot";
+
+/* Estilização de fragmentos da página */
+@import "snippets/modal/modal";
+@import "snippets/triggers/triggers";
+@import "snippets/login/login";
+@import "snippets/header/header";
+@import "snippets/headline/headline";
