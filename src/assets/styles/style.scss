@@ -1,9 +1,11 @@
 /* Variáveis SCSS */
 @import "variables";
+@import "color-pallete";
 
 /* Configurações globais */
 @import "../fonts/fonts";
 @import "boot";
+@import "display";
 
 /* Estilização de fragmentos da página */
 @import "snippets/modal/modal";
