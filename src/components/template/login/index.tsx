@@ -11,18 +11,20 @@ import Warning from "../triggers/warning";
 export default function Login() {
     return (
     <div className="main_login modal-content radius flex">
-        <header>
+        <header className="flex-1">
             <h1>Fazer Login</h1>
         </header>
-        <Warning>Aviso: você foi avisado.</Warning>
-        <form action="" className="flex">
+        <div className="flash-message flex-1">
+            <Warning>Aviso: você foi avisado.</Warning>
+        </div>
+        <form action="" className="flex-1 flex">
             <Input type="text" name="usuario" id="usuario" placeholder="Usuário" className="flex-1" />
             <Input type="password" name="senha" id="senha" placeholder="Senha" className="flex-1" />
-            <Button type="submit" className="flex-1">Entrar</Button>
             <label htmlFor="lembrar" className="flex-1"><input type="checkbox" name="lembrar" id="lembrar" /> Continuar conectado</label>
+            <Button type="submit" className="flex-1">Entrar</Button>
         </form>
-        <p><Anchor href="#">Esqueci a senha</Anchor></p>
-        <p>Ainda não tem cadastro? <Anchor href="#">Cadastre-se</Anchor></p>
+        <p className="flex-1"><Anchor href="#">Esqueci a senha</Anchor></p>
+        <p className="flex-1">Ainda não tem cadastro? <Anchor href="#">Cadastre-se</Anchor></p>
     </div>
     );
 }

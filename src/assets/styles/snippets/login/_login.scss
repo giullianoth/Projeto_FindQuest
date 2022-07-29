@@ -1,5 +1,5 @@
 .main_login {
-    flex-direction: column;
+    text-align: center;
 
     header {
 
@@ -15,6 +15,12 @@
 
         &>* {
             margin-bottom: 10px;
+        }
+
+        label {
+            text-align: left;
+            margin-bottom: 20px;
+            cursor: pointer;
         }
     }
 }
