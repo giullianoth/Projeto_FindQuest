@@ -3,10 +3,10 @@ import Button from "../../elements/form/button";
 import Input from "../../elements/form/input";
 
 import Trigger from "../triggers/trigger";
-import TriggerError from "../triggers/trigger-error";
-import TriggerInfo from "../triggers/trigger-info";
-import TriggerSuccess from "../triggers/trigger-success";
-import TriggerWarning from "../triggers/trigger-warning";
+import Error from "../triggers/error";
+import Info from "../triggers/info";
+import Success from "../triggers/success";
+import Warning from "../triggers/warning";
 
 export default function Login() {
     return (
@@ -14,7 +14,7 @@ export default function Login() {
         <header>
             <h1>Fazer Login</h1>
         </header>
-        <TriggerError>Aviso: você foi avisado.</TriggerError>
+        <Warning>Aviso: você foi avisado.</Warning>
         <form action="" className="flex">
             <Input type="text" name="usuario" id="usuario" placeholder="Usuário" className="flex-1" />
             <Input type="password" name="senha" id="senha" placeholder="Senha" className="flex-1" />

@@ -1,7 +1,7 @@
 import { FaInfo } from "@react-icons/all-files/fa/FaInfo";
 import Trigger from "../trigger";
 
-export default function TriggerInfo(props: {children: string}) {
+export default function Info(props: {children: string}) {
 
     const icon = <FaInfo />
 

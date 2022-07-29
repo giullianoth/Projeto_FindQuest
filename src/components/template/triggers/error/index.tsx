@@ -1,7 +1,7 @@
 import { FaRegTimesCircle } from "@react-icons/all-files/fa/FaRegTimesCircle";
 import Trigger from "../trigger";
 
-export default function TriggerError(props: {children: string}) {
+export default function Error(props: {children: string}) {
 
     const icon = <FaRegTimesCircle />
     
