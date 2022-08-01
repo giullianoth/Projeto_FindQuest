@@ -9,4 +9,4 @@
 ### ![Rich Black FOGRA](src/assets/images/samples/rich-black-fogra.png) Rich Black FOGRA
 - Hexadecimal: #0C0E14
 - RGB: 12, 14, 20
-- HSL: 255°, 40%, 8% | Teste
+- HSL: 255°, 40%, 8%
