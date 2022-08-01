@@ -10,6 +10,4 @@
 
 Rich Black FOGRA `#0C0E14` | Teste
 --- | ---
-Hexadecimal: #0C0E14
-RGB: 12, 14, 20
-HSL: 255°, 40%, 8% | Teste
+- Hexadecimal: #0C0E14 - RGB: 12, 14, 20 - HSL: 255°, 40%, 8% | Teste
