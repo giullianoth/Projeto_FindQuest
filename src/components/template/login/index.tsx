@@ -14,9 +14,7 @@ export default function Login() {
         <header className="flex-1">
             <h1>Fazer Login</h1>
         </header>
-        <div className="flash-message flex-1">
-            <Warning>Aviso: você foi avisado.</Warning>
-        </div>
+        <div className="flash-message flex-1"></div>
         <form action="" className="flex-1 flex">
             <Input type="text" name="usuario" id="usuario" placeholder="Usuário" className="flex-1" />
             <Input type="password" name="senha" id="senha" placeholder="Senha" className="flex-1" />
