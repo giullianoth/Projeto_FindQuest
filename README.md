@@ -4,7 +4,7 @@
 
 ![Paleta de cores do projeto FindQuest](src/assets/images/samples/FindQuest_small.png)
 
-[^note] Paleta obtida através do site [Coolors](https://coolors.co)
+[^note]: Paleta obtida através do site [Coolors](https://coolors.co)
 
 ### ![Rich Black FOGRA](src/assets/images/samples/rich-black-fogra.png) Rich Black FOGRA
 - Hexadecimal: #0C0E14
