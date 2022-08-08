@@ -4,8 +4,9 @@
     background-color: $rich-black-fogra-2-modal;
     z-index: 10;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     overflow: auto;
+    padding: 20px;
 
     .modal-content {
         background-color: $independence;
