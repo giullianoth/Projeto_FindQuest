@@ -15,6 +15,12 @@ $rbf-shadow-3: #6070A1;
 /* Rich Black FOGRA 2 - RBF2 */
 $rbf2-modal: rgba(20, 23, 34, 0.8);
 
+/* Celeste - CEL */
+$cel-shadow-1: #B8E6DF;
+$cel-shadow-2: #99BFBA;
+$cel-shadow-3: #66807C;
+$cel-shadow-4: #33403E;
+
 $celeste-hover: rgba(204, 255, 247, 0.8);
 
 /* Cores de avisos (Triggers) */
@@ -26,35 +32,105 @@ $trigger-error: #E94B4B;
 
 /* Gradientes */
 /* Rich Black FOGRA - RBF */
+
+/* normal */
 $rbf-gradient-1: linear-gradient(90deg, $rich-black-fogra, $rbf-shadow-1, $rbf-shadow-2, $rbf-shadow-3);
+
 $rbf-gradient-2: linear-gradient(90deg, $rich-black-fogra, $rbf-shadow-1, $rbf-shadow-2);
 $rbf-gradient-3: linear-gradient(90deg, $rbf-shadow-1, $rbf-shadow-2, $rbf-shadow-3);
+
 $rbf-gradient-4: linear-gradient(90deg, $rich-black-fogra, $rbf-shadow-1);
 $rbf-gradient-5: linear-gradient(90deg, $rbf-shadow-1, $rbf-shadow-2);
 $rbf-gradient-6: linear-gradient(90deg, $rbf-shadow-2, $rbf-shadow-3);
 
+/* reverso */
 $rbf-gradient-rev-1: linear-gradient(90deg, $rbf-shadow-3, $rbf-shadow-2, $rbf-shadow-1, $rich-black-fogra);
+
 $rbf-gradient-rev-2: linear-gradient(90deg, $rbf-shadow-2, $rbf-shadow-1, $rich-black-fogra);
 $rbf-gradient-rev-3: linear-gradient(90deg, $rbf-shadow-3, $rbf-shadow-2, $rbf-shadow-1);
+
 $rbf-gradient-rev-4: linear-gradient(90deg, $rbf-shadow-1, $rich-black-fogra);
 $rbf-gradient-rev-5: linear-gradient(90deg, $rbf-shadow-2, $rbf-shadow-1);
 $rbf-gradient-rev-6: linear-gradient(90deg, $rbf-shadow-3, $rbf-shadow-2);
 
+/* para baixo */
 $rbf-gradient-bttm-1: linear-gradient($rich-black-fogra, $rbf-shadow-1, $rbf-shadow-2, $rbf-shadow-3);
+
 $rbf-gradient-bttm-2: linear-gradient($rich-black-fogra, $rbf-shadow-1, $rbf-shadow-2);
 $rbf-gradient-bttm-3: linear-gradient($rbf-shadow-1, $rbf-shadow-2, $rbf-shadow-3);
+
 $rbf-gradient-bttm-4: linear-gradient($rich-black-fogra, $rbf-shadow-1);
 $rbf-gradient-bttm-5: linear-gradient($rbf-shadow-1, $rbf-shadow-2);
 $rbf-gradient-bttm-6: linear-gradient($rbf-shadow-2, $rbf-shadow-3);
 
+/* para baixo reverso */
 $rbf-gradient-bttm-rev-1: linear-gradient($rbf-shadow-3, $rbf-shadow-2, $rbf-shadow-1, $rich-black-fogra);
+
 $rbf-gradient-bttm-rev-2: linear-gradient($rbf-shadow-2, $rbf-shadow-1, $rich-black-fogra);
 $rbf-gradient-bttm-rev-3: linear-gradient($rbf-shadow-3, $rbf-shadow-2, $rbf-shadow-1);
+
 $rbf-gradient-bttm-rev-4: linear-gradient($rbf-shadow-1, $rich-black-fogra);
 $rbf-gradient-bttm-rev-5: linear-gradient($rbf-shadow-2, $rbf-shadow-1);
 $rbf-gradient-bttm-rev-6: linear-gradient($rbf-shadow-3, $rbf-shadow-2);
 
-$dark-gradient: linear-gradient(to bottom, $rich-black-fogra, $rich-black-fogra-2);
-$dark-gradient-reverse: linear-gradient(to bottom, $rich-black-fogra-2, $rich-black-fogra);
-$dark-gradient-2: linear-gradient(to bottom, $rich-black-fogra-2, $independence);
-$dark-gradient-2-reverse: linear-gradient(to bottom, $independence, $rich-black-fogra-2);
+/* Celeste - CEL */
+
+/* normal */
+$cel-gradient-1: linear-gradient(90deg, $celeste, $cel-shadow-1, $cel-shadow-2, $cel-shadow-3, $cel-shadow-4);
+
+$cel-gradient-2: linear-gradient(90deg, $celeste, $cel-shadow-1, $cel-shadow-2, $cel-shadow-3);
+$cel-gradient-3: linear-gradient(90deg, $cel-shadow-1, $cel-shadow-2, $cel-shadow-3, $cel-shadow-4);
+
+$cel-gradient-4: linear-gradient(90deg, $celeste, $cel-shadow-1, $cel-shadow-2);
+$cel-gradient-5: linear-gradient(90deg, $cel-shadow-1, $cel-shadow-2, $cel-shadow-3);
+$cel-gradient-6: linear-gradient(90deg, $cel-shadow-2, $cel-shadow-3, $cel-shadow-4);
+
+$cel-gradient-7: linear-gradient(90deg, $celeste, $cel-shadow-1);
+$cel-gradient-8: linear-gradient(90deg, $cel-shadow-1, $cel-shadow-2);
+$cel-gradient-9: linear-gradient(90deg, $cel-shadow-2, $cel-shadow-3);
+$cel-gradient-10: linear-gradient(90deg, $cel-shadow-3, $cel-shadow-4);
+
+/* reverso */
+$cel-gradient-rev-1: linear-gradient(90deg, $cel-shadow-4, $cel-shadow-3, $cel-shadow-2, $cel-shadow-1, $celeste);
+
+$cel-gradient-rev-2: linear-gradient(90deg, $cel-shadow-3, $cel-shadow-2, $cel-shadow-1, $celeste);
+$cel-gradient-rev-3: linear-gradient(90deg, $cel-shadow-4, $cel-shadow-3, $cel-shadow-2, $cel-shadow-1);
+
+$cel-gradient-rev-4: linear-gradient(90deg, $cel-shadow-2, $cel-shadow-1, $celeste);
+$cel-gradient-rev-5: linear-gradient(90deg, $cel-shadow-3, $cel-shadow-2, $cel-shadow-1);
+$cel-gradient-rev-6: linear-gradient(90deg, $cel-shadow-4, $cel-shadow-3, $cel-shadow-2);
+
+$cel-gradient-rev-7: linear-gradient(90deg, $cel-shadow-1, $celeste);
+$cel-gradient-rev-8: linear-gradient(90deg, $cel-shadow-2, $cel-shadow-1);
+$cel-gradient-rev-9: linear-gradient(90deg, $cel-shadow-3, $cel-shadow-2);
+$cel-gradient-rev-10: linear-gradient(90deg, $cel-shadow-4, $cel-shadow-3);
+
+/* para baixo */
+$cel-gradient-bttm-1: linear-gradient($celeste, $cel-shadow-1, $cel-shadow-2, $cel-shadow-3, $cel-shadow-4);
+
+$cel-gradient-bttm-2: linear-gradient($celeste, $cel-shadow-1, $cel-shadow-2, $cel-shadow-3);
+$cel-gradient-bttm-3: linear-gradient($cel-shadow-1, $cel-shadow-2, $cel-shadow-3, $cel-shadow-4);
+
+$cel-gradient-bttm-4: linear-gradient($celeste, $cel-shadow-1, $cel-shadow-2);
+$cel-gradient-bttm-5: linear-gradient($cel-shadow-1, $cel-shadow-2, $cel-shadow-3);
+$cel-gradient-bttm-6: linear-gradient($cel-shadow-2, $cel-shadow-3, $cel-shadow-4);
+
+$cel-gradient-bttm-7: linear-gradient($celeste, $cel-shadow-1);
+$cel-gradient-bttm-8: linear-gradient($cel-shadow-1, $cel-shadow-2);
+$cel-gradient-bttm-9: linear-gradient($cel-shadow-2, $cel-shadow-3);
+$cel-gradient-bttm-10: linear-gradient($cel-shadow-3, $cel-shadow-4);
+
+/* para baixo reverso */
+$cel-gradient-bttm-rev-1: linear-gradient($cel-shadow-4, $cel-shadow-3, $cel-shadow-2, $cel-shadow-1, $celeste);
+
+$cel-gradient-bttm-rev-2: linear-gradient($cel-shadow-3, $cel-shadow-2, $cel-shadow-1, $celeste);
+$cel-gradient-bttm-rev-3: linear-gradient($cel-shadow-4, $cel-shadow-3, $cel-shadow-2, $cel-shadow-1);
+
+$cel-gradient-bttm-rev-4: linear-gradient($cel-shadow-2, $cel-shadow-1, $celeste);
+$cel-gradient-bttm-rev-5: linear-gradient($cel-shadow-3, $cel-shadow-2, $cel-shadow-1);
+$cel-gradient-bttm-rev-6: linear-gradient($cel-shadow-4, $cel-shadow-3, $cel-shadow-2);
+
+$cel-gradient-bttm-rev-7: linear-gradient($cel-shadow-1, $celeste);
+$cel-gradient-bttm-rev-8: linear-gradient($cel-shadow-2, $cel-shadow-1);
+$cel-gradient-bttm-rev-9: linear-gradient($cel-shadow-3, $cel-shadow-2);
+$cel-gradient-bttm-rev-10: linear-gradient($cel-shadow-4, $cel-shadow-3);

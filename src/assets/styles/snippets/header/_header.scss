@@ -51,11 +51,17 @@
                             height: auto;
                             margin: auto auto auto 12px;
                             color: $rich-black-fogra-2;
+                            background-color: $celeste;
+
+                            &:hover {
+                                background-color: $celeste-hover;
+                            }
 
                             &.btn-outline {
                                 color: $celeste;
                                 font-weight: normal;
                                 border-width: 1px;
+                                background-color: transparent;
 
                                 &:hover {
                                     background: none;

@@ -20,6 +20,7 @@
     padding: 8px 24px;
 
     background-color: $celeste;
+    // background-image: $cel-gradient-8;
     border: none;
     border-radius: $radius;
     cursor: pointer;
@@ -29,6 +30,7 @@
     &:hover {
         color: $rich-black-fogra-2;
         background-color: $opal;
+        // background-image: $cel-gradient-rev-8;
     }
 
     &.btn-outline {
