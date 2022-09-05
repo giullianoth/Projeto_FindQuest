@@ -19,10 +19,10 @@
 
     padding: 8px 24px;
 
-    // background-image: $cel-gradient-8;
+    background-image: $cel-gradient-bttm-6;
     background-color: $celeste;
     border: none;
-    border-radius: $radius;
+    // border-radius: $radius;
     cursor: pointer;
 
     display: inline-block;
@@ -30,7 +30,7 @@
     &:hover {
         color: $rich-black-fogra-2;
         background-color: $opal;
-        // background-image: $cel-gradient-rev-8;
+        background-image: $cel-gradient-bttm-rev-6;
     }
 
     &.btn-outline {
