@@ -19,7 +19,7 @@ export default function Login() {
             <Input type="text" name="usuario" id="usuario" placeholder="Usuário" className="flex-1" />
             <Input type="password" name="senha" id="senha" placeholder="Senha" className="flex-1" />
             <label htmlFor="lembrar" className="flex-1"><input type="checkbox" name="lembrar" id="lembrar" /> Continuar conectado</label>
-            <Button type="submit" className="flex-1">Entrar</Button>
+            <Button type="submit" className="radius flex-1">Entrar</Button>
         </form>
         <p className="flex-1"><Anchor href="#">Esqueci a senha</Anchor></p>
         <p className="flex-1">Ainda não tem cadastro? <Anchor href="#">Cadastre-se</Anchor></p>
