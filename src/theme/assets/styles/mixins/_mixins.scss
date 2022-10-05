@@ -1,5 +1,5 @@
 // Fontes
-@mixin set-fonts($fontList) {
+@mixin setFonts($fontList: $fonts) {
 
     @each $presets in $fontList {
 
