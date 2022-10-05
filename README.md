@@ -1,5 +1,6 @@
-# Layout do Projeto FindQuest
+# Projeto FindQuest - Front End
 
+*(Definição)*
 
 ## 1º passo: Definição da Paleta de cores
 
