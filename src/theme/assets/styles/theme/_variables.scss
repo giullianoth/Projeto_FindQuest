@@ -1,0 +1,69 @@
+// Definição da tipografia - Fontes
+// Red Hat Display
+$font-red-hat-display: 'Red Hat Display', sans-serif;
+$font-red-hat-display-presets: (
+    weights: (300, 400, 500, 600, 700, 800, 900),
+    family: $font-red-hat-display,
+    files: (
+        "RedHatDisplay-Light.ttf",
+        "RedHatDisplay-Regular.ttf",
+        "RedHatDisplay-Medium.ttf",
+        "RedHatDisplay-SemiBold.ttf",
+        "RedHatDisplay-Bold.ttf",
+        "RedHatDisplay-ExtraBold.ttf",
+        "RedHatDisplay-Black.ttf"
+    ),
+    path: "Red_Hat_Display/static",
+    format: "tryetype"
+);
+
+// Oswald
+$font-oswald: 'Oswald', sans-serif;
+$font-oswald-presets: (
+    weights: (200, 300, 400, 500, 600, 700),
+    family: $font-oswald,
+    files: (
+        "Oswald-ExtraLight.ttf",
+        "Oswald-Light.ttf",
+        "Oswald-Regular.ttf",
+        "Oswald-Medium.ttf",
+        "Oswald-SemiBold.ttf",
+        "Oswald-Bold.ttf"
+    ),
+    path: "Oswald/static",
+    format: "truetype"
+);
+
+$fonts: $font-red-hat-display-presets, $font-oswald-presets;
+
+// Paleta de Cores
+// Primárias 
+$rich-black-fogra: #0C0E14;
+$rich-black-fogra-2: #141722;
+$independence: #415268;
+$opal: #94BDBC;
+$celeste: #CCFFF7;
+
+// Rich Black FOGRA - RBF
+$rbf-shadow-1: #1F2433;
+$rbf-shadow-2: #3A4461;
+$rbf-shadow-3: #6070A1;
+
+$rbf-rgba-1: rgba(20, 23, 34, 0.8);
+
+// Celeste - CEL
+$cel-shadow-1: #B8E6DF;
+$cel-shadow-2: #99BFBA;
+$cel-shadow-3: #66807C;
+$cel-shadow-4: #33403E;
+
+$celeste-rgba-1: rgba(204, 255, 247, 0.8);
+
+// Cores de avisos (Triggers)
+$trigger: $opal;
+$trigger-success: #45B645;
+$trigger-info: #4481D1;
+$trigger-warning: #CCB031;
+$trigger-error: #E94B4B;
+$trigger-colors: $trigger-success, $trigger-info, $trigger-warning, $trigger-error;
+

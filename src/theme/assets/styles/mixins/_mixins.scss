@@ -1,0 +1,232 @@
+// Fontes
+@mixin set-fonts($fontList) {
+
+    @each $presets in $fontList {
+
+        $weight: ();
+        $family: ();
+        $files: ();
+        $path: ();
+        $format: ();
+    
+        @each $attr, $values in $presets {
+    
+            @if $attr =="weights" {
+                @for $w from 1 through length($list: $values) {
+                    $weight: append($list: $weight, $val: nth($list: $values, $n: $w), $separator: comma);
+                }
+            }
+    
+            @if $attr =="family" {
+                @for $f from 1 through length($list: $weight) {
+                    $family: append($list: $family, $val: $values, $separator: comma);
+                }
+            }
+    
+            @if $attr =="files" {
+                @for $fl from 1 through length($list: $weight) {
+                    $files: append($list: $files, $val: nth($list: $values, $n: $fl), $separator: comma);
+                }
+            }
+    
+            @if $attr =="path" {
+                @for $p from 1 through length($list: $weight) {
+                    $path: append($list: $path, $val: "#{$font-path}/#{$values}/#{nth($list: $files, $n: $p)}", $separator: comma);
+                }
+            }
+    
+            @if $attr =="format" {
+                @for $fm from 1 through length($list: $weight) {
+                    $format: append($list: $format, $val: $values, $separator: comma);
+                }
+            }
+        }
+    
+        @for $font from 1 through length($list: $weight) {
+            @font-face {
+                font-family: nth($list: $family, $n: $font);
+                src: url(nth($list: $path, $n: $font)) format(nth($list: $format, $n: $font));
+                font-weight: nth($list: $weight, $n: $font);
+            }
+        }
+    }
+}
+
+// Dimensões da Viewport
+@mixin container() {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// Configurações de Display
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-basis($flex-basis, $gap: 0) {
+    @if $gap ==0 {
+        flex-basis: $flex-basis;
+    }
+
+    @else {
+        flex-basis: calc($flex-basis - $gap);
+    }
+}
+
+@mixin flex-1($gap: 0) {
+    @include flex-basis(100%, $gap);
+}
+
+@mixin flex-2($gap: 0) {
+    @include flex-basis(50%, $gap);
+}
+
+@mixin flex-3($gap: 0) {
+    @include flex-basis(33.33%, $gap);
+}
+
+@mixin flex-4($gap: 0) {
+    @include flex-basis(25%, $gap);
+}
+
+@mixin relative() {
+    position: relative;
+}
+
+@mixin absolute() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin fixed() {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin radius($value: $radius) {
+    border-radius: $value;
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+}
+
+@mixin box-sizing($value: border-box) {
+    box-sizing: $value;
+    -moz-box-sizing: $value;
+    -webkit-box-sizing: $value;
+}
+
+@mixin outline($border-color, $border-width: 1px, $border-style: solid) {
+    background: transparent;
+    border: $border-width $border-style $border-color;
+    color: $border-color;
+}
+
+@mixin embed-container() {
+    @include relative;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+    embed,
+    video,
+    iframe {
+        @include absolute;
+    }
+}
+
+// Botão
+@mixin button() {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $rich-black-fogra-2;
+
+    padding: $form-input-padding;
+
+    background-color: $celeste;
+
+    border: none;
+    cursor: pointer;
+
+    display: inline-block;
+
+    @include transition;
+
+    &:hover {
+        background-color: $opal;
+    }
+
+    &.btn-outline {
+        @include outline($celeste);
+
+        &:hover {
+            @include outline($opal);
+        }
+    }
+
+    &.btn-big {
+        font-size: $font-size-big;
+    }
+
+    &.btn-small {
+        font-size: $font-size-small;
+    }
+}
+
+// Imagem / Cor
+@mixin gradient-bg($colors, $direction: right) {
+
+    $setColors: ();
+
+    @each $color in $colors {
+        $setColors: append($list: $setColors, $val: $color, $separator: comma);
+    }
+
+    background-image: linear-gradient(to #{$direction}, $setColors);
+}
+
+@mixin image-bg($img-path: "") {
+    @if $img-path  !="" {
+        background-image: url($img-path);
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+// Design Responsivo
+@mixin responsive-design($screen-width, $setup, $is-min-width: false) {
+
+    $width-setup: "";
+
+    @if $is-min-width ==false {
+        $width-setup: "max";
+    }
+
+    @else {
+        $width-setup: "min";
+    }
+
+    @media (#{$width-setup}-width: $screen-width) {
+        @each $attr, $value in $setup {
+            #{$attr}: #{$value};
+        }
+    }
+}
+
+// Efeitos de Animação
+@mixin transition($property: all, $duration: $transition-duration, $timing-function: ease-in-out, $delay: 0s) {
+    transition: $property $duration $timing-function $delay;
+}

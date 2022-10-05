@@ -1,0 +1,45 @@
+.main_headline {
+    @include image-bg;
+    @include flex;
+
+    &_content {
+        @include container;
+
+        @include flex;
+        justify-content: flex-start;
+
+        header {
+            @include flex-2;
+
+            text-align: right;
+
+            @include responsive-design(48em, (
+                flex-basis: 100%,
+                text-align: center
+            ));
+
+            h1 {
+                font-size: 3em;
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                @include responsive-design(30em, (font-size: calc($font-size-big * 1.5)));
+
+                &>span {
+                    font-size: 1.2em;
+                    font-weight: 900;
+                    display: block;
+                    text-transform: uppercase;
+                }
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            a {
+                @include button;
+            }
+        }
+    }
+}

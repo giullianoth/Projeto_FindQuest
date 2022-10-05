@@ -1,0 +1,19 @@
+body {
+    background-color: $rich-black-fogra;
+    color: #FFF;
+}
+
+a {
+    color: $celeste;
+
+    @include transition;
+
+    &:hover {
+        color: $opal;
+    }
+}
+
+@import "snippets/triggers/triggers";
+@import "snippets/login/login";
+@import "snippets/header/header";
+@import "snippets/headline/headline";

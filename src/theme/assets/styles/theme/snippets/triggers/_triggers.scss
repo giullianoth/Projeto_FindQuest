@@ -1,0 +1,42 @@
+/* TRIGGERS */
+.trigger {
+
+    width: 100%;
+    display: block;
+    background-color: $trigger;
+    padding: 10px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+
+    @include radius($radius-small);
+
+    &>svg {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    @each $trigger in $trigger-types {
+        &.trigger-#{$trigger} {
+            background-color: nth($list: $trigger-colors, $n: index($list: $trigger-types, $value: $trigger));
+        }
+    }
+
+    &-outline {
+        background: none;
+        color: $trigger;
+        border: 2px solid $trigger;
+        text-shadow: none;
+
+        &>i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        @each $trigger in $trigger-types {
+            &.trigger-#{$trigger} {
+                @include outline(nth($list: $trigger-colors, $n: index($list: $trigger-types, $value: $trigger)));
+            }
+        }
+    }
+}

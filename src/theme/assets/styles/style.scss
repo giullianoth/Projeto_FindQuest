@@ -1,0 +1,14 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+@import "theme/variables";
+@import "theme/fonts";
+
+/* RESET DO DOCUMENTO | Document Reset */
+@import "boot/boot";
+
+/* JANELA MODAL */
+@import "theme/snippets/modal/modal";
+
+/* ESTILIZAÇÃO DO DOCUMENTO */
+@import "theme/theme";
